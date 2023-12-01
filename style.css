@@ -115,6 +115,7 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  
 }
 .navbar{
   padding: 0.5rem;
@@ -123,7 +124,7 @@ header{
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #1493d3; 
+  background-color: #2b0594; 
   transition: background-color 0.5s ease, opacity 0.5s ease;
 }
  
