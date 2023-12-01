@@ -203,10 +203,12 @@ header{
 
 .row2{
   margin-bottom: 10rem;
+  background-color: #fff;
 }
 
 .row3{
   margin-bottom: 10rem;
+  background-color: #fff;
 }
 
 .row1 .img-box,
@@ -215,22 +217,30 @@ header{
   width: 50%;
 }
 
+.row2 .img-box{
+  scale: 0.95;
+  background-color: #fff;
+}
+
 .row2 .img-box,
 .row1 .text-box{
   float: right;
   width: 50%;
 }
 
-.row3 .img-box,
-.row4 .text-box{
+.row3 .img-box{
   float: left;
   width: 50%;
+  scale: 0.9;
+  background-color: #fff;
+  
 }
 
-.row4 .img-box,
+
 .row3 .text-box{
   float: right;
   width: 50%;
+  
 }
 
 .row .img-box{
@@ -823,3 +833,4 @@ header{
       height: 100vmax;
   }
 }
+
