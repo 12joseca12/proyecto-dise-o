@@ -103,7 +103,7 @@ h1, h2, h3{
 }
 
 
-/* ################### header styling#################### */
+
 body{
   font-family: 'Exo+2', sans-serif;
   line-height: 1.7;
@@ -117,6 +117,9 @@ header{
   position: relative;
   
 }
+
+/* NavBar */
+
 .navbar{
   padding: 0.5rem;
   position: fixed;
@@ -141,7 +144,7 @@ header{
   clear: both;
   display: block;
 }
-/* ################### header content styling ################ */
+
 
 .navbar .nav-item{
   display: inline-block;
@@ -163,6 +166,14 @@ header{
 .navbar.scrolled {
   opacity: 0.25; 
 }
+
+
+/* Side Menu */
+
+
+
+
+/*  Header */
 
 .header-content{
   text-align: center;
@@ -268,13 +279,29 @@ header{
 
 .slider {
   display: flex;
-  height: auto;
+  height: 45vh;
   margin: auto;
   overflow: hidden;
   align-items: center;
-  width: 80%; 
-  background-color: #f4f4f4;
+  width: 100%; 
+  background-color: rgb(180, 213, 255);
+  position: relative;
 }
+
+
+.slider h2 {
+  font-family: 'Audiowide', sans-serif;
+  color: rgb(248, 144, 39);
+  font-size: 4rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  margin: 0;
+}
+
 
 .slider::before {
   position: absolute;
@@ -284,7 +311,9 @@ header{
   width: 50vh;
   height: 215px;
   background: rgb(244,244,244);
-  background: linear-gradient(90deg, rgba(244,244,244,1) 39%, rgba(244,244,244,0) 100%);
+  background: linear-gradient(90deg, rgba(180, 213, 255,1) 39%, rgba(180, 213, 255,0) 100%);
+  bottom: 10%; 
+  transform: translate(0, 10%);
 }
 
 .slider::after {
@@ -294,8 +323,11 @@ header{
   width: 50vh;
   height: 215px;
   background: rgb(244,244,244);
-  background: linear-gradient(-90deg, rgba(244,244,244,1) 39%, rgba(244,244,244,0) 100%);
+  background: linear-gradient(-90deg, rgba(180, 213, 255,1) 39%, rgba(180, 213, 255,0) 100%);
+  bottom: 10%; 
+  transform: translate(0, 10%);
 }
+
 
 .slider .slide-track {
   display: flex;
@@ -303,6 +335,9 @@ header{
   -webkit-animation: scroll 35s linear infinite;
   width: calc(240px * 22);
   scroll-behavior: smooth;
+  position: absolute;
+  bottom: 10%; 
+  transform: translate(0, 10%);
 }
 .slider .slide {
   width: 15vh; 
@@ -323,7 +358,6 @@ header{
   height: auto; 
   max-width: 100%; 
   object-fit: contain; 
-  
   opacity: 1;
 }
 
