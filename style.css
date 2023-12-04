@@ -312,8 +312,8 @@ header{
   height: 215px;
   background: rgb(244,244,244);
   background: linear-gradient(90deg, rgba(180, 213, 255,1) 39%, rgba(180, 213, 255,0) 100%);
-  bottom: 10%; 
-  transform: translate(0, 10%);
+  bottom: 12%; 
+  transform: translate(0, 12%);
 }
 
 .slider::after {
@@ -324,8 +324,8 @@ header{
   height: 215px;
   background: rgb(244,244,244);
   background: linear-gradient(-90deg, rgba(180, 213, 255,1) 39%, rgba(180, 213, 255,0) 100%);
-  bottom: 10%; 
-  transform: translate(0, 10%);
+  bottom: 12%; 
+  transform: translate(0, 12%);
 }
 
 
