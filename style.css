@@ -113,12 +113,11 @@ body{
 
 header{
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.25)) , url('img/drift-spain.png');
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.25)) , url('img/banner2-rojo.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  
 }
 
 /* NavBar */
@@ -130,7 +129,7 @@ header{
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #2b0594; 
+  background-color: #bd0303; 
   transition: background-color 0.5s ease, opacity 0.5s ease;
 }
  
@@ -208,14 +207,14 @@ header{
   overflow: hidden;
   align-items: center;
   width: 100%; 
-  background-color: rgb(180, 213, 255);
+  background-color: rgb(150, 22, 22);
   position: relative;
 }
 
 
 .slider h2 {
   font-family: 'Audiowide', sans-serif;
-  color: rgb(248, 144, 39);
+  color: rgb(255, 255, 255);
   font-size: 4rem;
   position: absolute;
   top: 15%;
@@ -235,7 +234,7 @@ header{
   width: 50vh;
   height: 215px;
   background: rgb(244,244,244);
-  background: linear-gradient(90deg, rgba(180, 213, 255,1) 39%, rgba(180, 213, 255,0) 100%);
+  background: linear-gradient(90deg, rgb(150, 22, 22) 39%, rgba(180, 213, 255,0) 100%);
   bottom: 12%; 
   transform: translate(0, 12%);
 }
@@ -247,7 +246,7 @@ header{
   width: 50vh;
   height: 215px;
   background: rgb(244,244,244);
-  background: linear-gradient(-90deg, rgba(180, 213, 255,1) 39%, rgba(180, 213, 255,0) 100%);
+  background: linear-gradient(-90deg, rgb(150, 22, 22) 39%, rgba(180, 213, 255,0) 100%);
   bottom: 12%; 
   transform: translate(0, 12%);
 }
@@ -315,16 +314,21 @@ header{
   box-sizing: border-box;
   padding: 25px;
   transition: 0.6s ease;
+  
 }
 
 .col-op:nth-child(1){
-  background-color: #ec8a86;
+  background-color: #b91c16;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 .col-op:nth-child(2){
-  background-color: #f0b762;
+  background-color: rgb(248, 163, 36);
 }
 .col-op:nth-child(3){
-  background-color: #728bfa;
+  background-color: #b91c16;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .col-op h2{
@@ -359,22 +363,24 @@ header{
   width: 45vh;
   position: absolute;
   right: -2vh;
-  top: 25%;
+  top: 30%;
+  filter: drop-shadow(0 16px 32px rgba(255, 255, 255, 0.4));
 }
 
 .col-op .img-milla{
-  width: 40vh;
+  width: 37.5vh;
   position: absolute;
-  right: -2vh;
-  top: 20%;
-  
+  right: 0vh;
+  top: 30%;
+  filter: drop-shadow(0 16px 32px rgba(255, 255, 255, 0.4));
 }
 
 .col-op .img-caraudio{
   width: 40vh;
   position: absolute;
   right: -2vh;
-  top: 15%;
+  top: 20%;
+  filter: drop-shadow(0 16px 32px rgba(255, 255, 255, 0.4));
 }
 
 .col-op:hover{
@@ -389,6 +395,61 @@ header{
   text-align: left;
 }
 
+
+/*  Mapa  */
+
+.caja-mapa {
+  width: 80%;
+  margin: 20vh auto; 
+  display: flex;
+  justify-content: center;
+  border: 5px solid #fb0000;
+  border-radius: 30px;
+}
+
+.mitad-izquierda {
+  flex: 1;
+  padding: 20px;
+}
+
+.mitad-derecha {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.mitad-derecha::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('img/jarama.png') center/contain no-repeat;
+  z-index: -1;
+  opacity: 0.05;
+  rotate: -45deg;
+}
+
+
+
+.mitad-derecha h2{
+  text-align: center;
+  color: #b91c16;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 3em;
+  margin-top: 5%;
+  z-index: 100;
+}
+
+.mitad-izquierda iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  border-radius: 20px;
+}
 
 
 /* ########################## media query ######################### */
