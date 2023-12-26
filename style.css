@@ -473,13 +473,14 @@ header{
     color: #ba0101;
     margin-bottom: 2vh;
     line-height: 1em;
-    
+    font-family: 'Audiowide', sans-serif;
   }
   .blog-slider__text {
     color: #523a3a;
     margin-bottom: 7vh;
     line-height: 2.25em;
     font-size: 1.5em;
+    font-family: 'Goldman', sans-serif;
   }
   .blog-slider__button {
     display: inline-flex;
@@ -493,7 +494,14 @@ header{
     justify-content: center;
     text-align: center;
     letter-spacing: 1px;
+    font-family: 'Goldman', sans-serif;
   }
+
+  .blog-slider__button i{
+    justify-content: center;
+    align-content: center;
+  }
+
   @media screen and (max-width: 576px) {
     .blog-slider__button {
       width: 100%;
