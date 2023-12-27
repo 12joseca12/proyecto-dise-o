@@ -67,6 +67,7 @@ h1, h2, h3{
   border-radius: 10em;
   color: rgb(255, 255, 255);
   letter-spacing: 0.15em;
+  font-family: 'Goldman', sans-serif;
 }
 .btn-primary:hover{
   background: #ddd;
@@ -137,6 +138,7 @@ header{
 .navbar .logo{
   letter-spacing: 0.2em;
   float: left;
+  margin-top: 1.4%;
 }
 .navbar .nav-items{
   float: right;
@@ -152,7 +154,6 @@ header{
 .navbar .nav-item{
   display: inline-block;
   padding: 1rem;
-
 }
 .navbar a:link,
 .navbar a:visited{
@@ -161,6 +162,7 @@ header{
 .navbar a{
   padding-bottom: 0.3rem;
   margin: 0 auto;
+  font-size: 1.5em;
 }
 .navbar a:hover{
   border-bottom: 1px solid white;
@@ -171,7 +173,7 @@ header{
 }
 
 
-/*  Header */
+/*  jumbotron  */
 
 .header-content{
   text-align: center;
@@ -190,13 +192,16 @@ header{
   font-weight: 700;
   text-align: center;
   margin:auto 0%;
+  font-size: 6em;
 }
 .header-content p{
   text-transform: uppercase;
   text-align: center;
+  font-size: 2em;
+  font-family: 'Goldman',sans-serif;
+  margin-top: -2%;
 }
 
-/* ##################### section styling ############### */
 
 
 /*  slider styling  */
@@ -498,8 +503,7 @@ header{
   }
 
   .blog-slider__button i{
-    justify-content: center;
-    align-content: center;
+    margin-top: 2.4%;
   }
 
   @media screen and (max-width: 576px) {
@@ -605,12 +609,13 @@ header{
 
 
 
-.mitad-derecha h2{
+.dnd{
   text-align: center;
   color: #b91c16;
   font-family: 'Audiowide', sans-serif;
-  font-size: 3em;
-  margin-top: 5%;
+  font-size: 4em;
+  margin-top: 10%;
+  margin-bottom: -8%;
   z-index: 100;
 }
 
@@ -621,10 +626,115 @@ header{
   border-radius: 20px;
 }
 
+
+/*  Mitad derecha  */
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#740101;
+  display:inline-block;
+  color:#fff;
+  border-radius:5px 5px 0px 0px;
+  box-shadow: 0 0 0.8rem #af000080;
+  font-size: 1.75em;
+  font-family: 'Audiowide', sans-serif;
+}
+.panels{
+  background:#ffffff39;
+  box-shadow: 0 2rem 2rem #c4000080;
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  border-radius:5px;
+  overflow:hidden;
+  padding:20px;  
+}
+
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+
+.panel ul{
+  list-style: none;
+}
+
+.panel ul li{
+  font-family: 'Goldman', sans-serif;
+  line-height: 1.5; 
+}
+
+.panel ul li i{
+  font-size: 2em;
+  margin-right: 3%;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:2em;
+  font-weight:bold;
+  font-family: 'Audiowide', sans-serif;
+  color: #840500;
+  text-align: center;
+  margin-bottom: 0%;
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background:#ffffff;
+  color:#810000;
+  border-top: 3px solid #a30000;
+}
+
+@media (max-width: 768px) {
+  .caja-mapa {
+    flex-direction: column;
+  }
+
+  .mitad-izquierda,
+  .mitad-derecha {
+    width: 100%;
+  }
+
+  .mitad-derecha::before {
+    background-size: cover;
+  }
+
+  .dnd {
+    margin-top: 0;
+    margin-bottom: 0%;
+  }
+
+  .warpper {
+    margin-top: 5%;
+  }
+}
+
+
 /*  footer  */
-
-
-
 
 .footer .container {
   max-width: 80%;

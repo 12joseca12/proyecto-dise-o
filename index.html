@@ -4,15 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MotorLab</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header class="header">
@@ -72,7 +66,7 @@
                 En este evento podrás ver los coches de mayor potencia del circuito, en una carrera de línea recta
                 competir 1vs1 para comprobar cuál es el mejor vehículo. 
               </div>
-              <a href="entradas.html" class="blog-slider__button"><i class="fa fa-shopping-cart" aria-hidden="comprar entradas"></i> COMPRA TUS ENTRADAS</a>
+              <a href="entradas.html" class="blog-slider__button"><i class="fa fa-shopping-cart" aria-hidden="comprar entradas"></i>COMPRA TUS ENTRADAS</a>
             </div>
           </div>
 
@@ -98,10 +92,11 @@
       </div>
     </div>
 
+    <h2 class="dnd">¿Dónde encontrarnos?</h2>
     <div class="caja-mapa">
       <div class="mitad-izquierda">
         <iframe
-          src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=es&amp;q=Autov%C3%ADa%20A1,%20km%2028,%2028700%20San%20Sebasti%C3%A1n%20de%20los%20Reyes,%20Madrid,%20Espa%C3%B1a.+(Circuito%20del%20Jarama)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%25&amp;hl=es&amp;q=Autov%C3%ADa%20A1,%20km%2028,%2028700%20San%20Sebasti%C3%A1n%20de%20los%20Reyes,%20Madrid,%20Espa%C3%B1a.+(Circuito%20del%20Jarama)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           frameborder="0"
           scrolling="no"
           marginheight="0"
@@ -109,7 +104,55 @@
         ></iframe>
       </div>
       <div class="mitad-derecha">
-        <h2>¿Dónde encontrarnos?</h2>
+        <div class="warpper">
+          <input class="radio" id="one" name="group" type="radio" checked>
+          <input class="radio" id="two" name="group" type="radio">
+          <input class="radio" id="three" name="group" type="radio">
+          <div class="tabs">
+          <label class="tab" id="one-tab" for="one"><i class="fa fa-car" aria-hidden="true"></i> Coche</label>
+          <label class="tab" id="two-tab" for="two"><i class="fa fa-bus" aria-hidden="true"></i> Bus</label>
+          <label class="tab" id="three-tab" for="three"><i class="fa fa-train" aria-hidden="true"></i> Tren</label>
+            </div>
+          <div class="panels">
+          <div class="panel" id="one-panel">
+            <div class="panel-title">Mejor ruta en coche</div>
+            <ul name="indicaciones_madrid" class="indicaciones">
+              <li class="ico_indic_recto"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> Dirígete por la autovía A-1 dirección Burgos.</li>
+              <li class="ico_indic_salida"><i class="fa fa-level-up" aria-hidden="true"></i> Toma la salida 28.</li>
+              <li class="ico_indic_rotonda"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> En la rotonda, toma la tercera salida, cruzando la autovía</li>
+              <li class="ico_indic_rotonda"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>En la segunda rotonda, toma la 1ª salida en dirección a Calle del Naranjo de Bulnes.</li>
+              <li class="ico_indic_rotonda"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> En la siguiente rotonda, toma la tercera salida en dirección a Av. de las Encinas.</li>
+              <li class="ico_indic_giroIzq"><i class="fa fa-arrow-left" aria-hidden="true"></i> Seguidamente, gira a la izquierda con dirección a Paseo del Circuito.</li>
+              </ul>
+          </div>
+          <div class="panel" id="two-panel">
+            <div class="panel-title">Única ruta en bus</div>
+            <ul>
+              <li><img src="https://www.jarama.org/jarama/wp-content/uploads/2017/09/como-llegar-ruta-bus-195.png" alt="Ruta en bus 195"></li>
+              <li>Desde el intercambiador de Plaza Castilla coger línea 195</li>
+              <li>Toma la línea 195 (Braojos-Pza.Calvo Sotelo)</li>
+              <li>Baja en la parada Ctra.A1-Urb.Ciudalcampo (ID 4241).</li>
+              <li>Luego camina hasta el Circuito (ver mapa).</li>
+              <br>
+              <br>
+              <li>Se recomienda el acceso en coche para disfrutar totalmente de la experiencia</li>
+            </ul>
+          </div>
+          <div class="panel" id="three-panel">
+            <div class="panel-title">Ruta más rápida en tren</div>
+            <ul>
+              <li><img src="https://www.jarama.org/jarama/wp-content/uploads/2017/09/como-llegar-ruta-tren-nministerios.png" alt="Ruta en tren"></li>
+              <li>Toma la línea 10 de Metro en dirección Tres Olivos hasta Plaza de Castilla.</li>
+              <li>En Plaza de Castilla coge el autobús de la línea 171 (Av. Guadalix-Centro De Salud).</li>
+              <li>Baja en la parada Pza.La Fuente-Urb.Ciudalcampo (ID 4226).</li>
+              <li>Luego camina hasta el Circuito (ver mapa).</li>
+              <br>
+              <br>
+              <li>Se recomienda el acceso en coche para disfrutar totalmente de la experiencia</li>
+            </ul>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
 
