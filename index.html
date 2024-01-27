@@ -13,12 +13,12 @@
     <header class="header-index">
 
 
-      <nav class="navbar">
+      <nav class="navbar" id="principio">
         <div class="container">
-          <a href="index.html"><img src="/img/logoDiseño.png" alt="Logo"></a>
+          <a href="index.html"><img src="/img/logoDiseño.png" alt="Logo" accesskey="a" tabindex="0"></a>
           <ul class="nav-items">
             <li class="nav-item">
-              <a href="entradas.html"
+              <a href="entradas.html" accesskey="b" tabindex="1"
                 ><i
                   class="fa fa-shopping-cart"
                   aria-hidden="comprar entradas"
@@ -27,7 +27,7 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#faq"
+              <a href="#faq" accesskey="c"
                 ><i
                   class="fa fa-question"
                   aria-hidden="preguntas frecuentes"
@@ -36,13 +36,13 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#contact"
+              <a href="#contact" accesskey="d"
                 ><i class="fa fa-phone" aria-hidden="contáctanos"></i>
                 Contacto</a
               >
             </li>
           </ul>
-          <a href="#opciones" class="salto">Saltar a contenido</a>
+          <a href="#opciones" class="salto" accesskey="e">Saltar a contenido</a>
         </div>
       </nav>
 
@@ -52,7 +52,7 @@
           <p class="text-light">
             El mayor evento automovilistico de toda españa
           </p>
-          <a class="btn btn-primary md-heading">Entradas</a>
+          <a class="btn btn-form2 md-heading" href="entradas.html" accesskey="f">Entradas</a>
         </div>
       </div>
     </header>
@@ -72,7 +72,7 @@
                 los mejores drifters del mundo en una carrera llena de trompos,
                 humo y acción.
               </div>
-              <a href="entradas.html" class="blog-slider__button"
+              <a href="entradas.html" class="blog-slider__button" accesskey="g"
                 ><i
                   class="fa fa-shopping-cart"
                   aria-hidden="comprar entradas"
@@ -93,7 +93,7 @@
                 circuito, en una carrera de línea recta competir 1vs1 para
                 comprobar cuál es el mejor vehículo.
               </div>
-              <a href="entradas.html" class="blog-slider__button"
+              <a href="entradas.html" class="blog-slider__button" accesskey="h"
                 ><i
                   class="fa fa-shopping-cart"
                   aria-hidden="comprar entradas"
@@ -114,7 +114,7 @@
                 Después de la jornada, los coches con los mejores equipos de
                 sonido serán los encargados de poner ritmo a la noche.
               </div>
-              <a href="entradas.html" class="blog-slider__button"
+              <a href="entradas.html" class="blog-slider__button" accesskey="i"
                 ><i
                   class="fa fa-shopping-cart"
                   aria-hidden="comprar entradas"
@@ -136,7 +136,7 @@
                 Incluyendo regalos exclusivos de las mejores marcas y aprovechar al máximo los stands de los
                 patrocinadores.
               </div>
-              <a href="entradas.html" class="blog-slider__button"
+              <a href="entradas.html" class="blog-slider__button" accesskey="j"
                 ><i
                   class="fa fa-shopping-cart"
                   aria-hidden="comprar entradas"
@@ -164,9 +164,9 @@
       </div>
       <div class="mitad-derecha">
         <div class="warpper">
-          <input class="radio" id="one" name="group" type="radio" checked />
-          <input class="radio" id="two" name="group" type="radio" />
-          <input class="radio" id="three" name="group" type="radio" />
+          <input class="radio" id="one" name="group" type="radio" checked accesskey="k"/>
+          <input class="radio" id="two" name="group" type="radio" accesskey="l"/>
+          <input class="radio" id="three" name="group" type="radio" accesskey="m"/>
           <div class="tabs">
             <label class="tab" id="one-tab" for="one"
               ><i class="fa fa-car" aria-hidden="true"></i> Coche</label
@@ -324,7 +324,36 @@
 
 
 
-    
+    <div class="container-formulario">
+      <div class="formulario-contacto">
+         <h4>No dudes en escribirnos</h4>
+         <form action="">
+          <fieldset>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="input-form" placeholder="Tu Nombre" required accesskey="n" tabindex="2">
+          <br>
+  
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" class="input-form" placeholder="Correo Electrónico" required accesskey="o" tabindex="3"> 
+          <br>
+  
+          <label for="matricula">Matrícula:</label>
+          <input type="text" id="matricula" name="matricula" class="input-form" placeholder="Tu Matrícula" required accesskey="p" tabindex="4">
+          <br>
+  
+          <textarea id="mensaje" name="mensaje" class="input-form" placeholder="Escribe tu mensaje aquí" required accesskey="q" tabindex="5"></textarea>
+          <br>
+
+           <button class="btn-form" accesskey="r">Contáctanos!</button>
+          </fieldset>
+         </form>
+      </div>
+      <div class="caja-imagen">
+
+      </div>
+    </div>
+
+    <a href="#opciones" class="boton-subir" accesskey="s">➲</a>
 
 
 
@@ -385,8 +414,8 @@
           <div class="footer-col">
             <h4>Información</h4>
             <ul>
-              <li><a href="#infoEventos">Eventos</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#infoEventos" accesskey="t">Eventos</a></li>
+              <li><a href="#faq" accesskey="u">FAQ</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -401,7 +430,7 @@
               <li>
                 <div class="button" id="button-5">
                   <div id="t"></div>
-                  <a href="entradas.html/#msform">Entradas</a>
+                  <a href="entradas.html/#msform" accesskey="u">Entradas</a>
                 </div>
               </li>
             </ul>

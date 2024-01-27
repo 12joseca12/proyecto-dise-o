@@ -11,16 +11,38 @@
 <body>
 
     <header class="header-entradas">
-     <nav class="navbar">
+      <nav class="navbar" id="principio">
         <div class="container">
-          <h1 class="logo lg-heading text-light">MOTORLAB</h1>
+          <a href="index.html"><img src="/img/logoDiseño.png" alt="Logo" accesskey="a"></a>
           <ul class="nav-items">
-            <li class="nav-item"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="comprar entradas"></i> Entradas</a></li>
-            <li class="nav-item"><a href="index.html/#faq"><i class="fa fa-question" aria-hidden="preguntas frecuentes"></i> FAQ</a></li>
-            <li class="nav-item"><a href="index.html/#contact"><i class="fa fa-phone" aria-hidden="contáctanos"></i> Contacto</a></li>
+            <li class="nav-item">
+              <a href="entradas.html" accesskey="b"
+                ><i
+                  class="fa fa-shopping-cart"
+                  aria-hidden="comprar entradas"
+                ></i>
+                Entradas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#faq" accesskey="c"
+                ><i
+                  class="fa fa-question"
+                  aria-hidden="preguntas frecuentes"
+                ></i>
+                FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" accesskey="d"
+                ><i class="fa fa-phone" aria-hidden="contáctanos"></i>
+                Contacto</a
+              >
+            </li>
           </ul>
+          <a href="#opciones" class="salto" accesskey="e">Saltar a contenido</a>
         </div>
-     </nav>
+      </nav>
      <video src="img/video.mp4" autoplay controls aria-controls="reproducir video" ></video>
     </header>
 
@@ -36,45 +58,45 @@
       <fieldset>
         <h2 class="fs-title">DATOS PERSONALES</h2>
         <h3 class="fs-subtitle">Confirmación de acceso al recinto</h3>
-        <input type="text" name="fname" placeholder="Nombre" />
-        <input type="text" name="lname" placeholder="Apellidos" />
-        <input type="text" name="phone" placeholder="Teléfono" />
-        <input type="text" name="email" placeholder="Email" />
-        <input type="button" name="next" class="next action-button" value="➜" />
+        <input type="text" name="fname" placeholder="Nombre" accesskey="f"/>
+        <input type="text" name="lname" placeholder="Apellidos" accesskey="g"/>
+        <input type="text" name="phone" placeholder="Teléfono" accesskey="h"/>
+        <input type="text" name="email" placeholder="Email" accesskey="i"/>
+        <input type="button" name="next" class="next action-button" value="➜" accesskey="j"/>
       </fieldset>
       <fieldset class="radio">
         <h2 class="fs-title">TIPO DE ENTRADAS</h2>
         <h3 class="fs-subtitle">Elija entre un único evento o disfrute de un día de acción automovilística</h3>
         <div class="custom-radio">
           <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-1"  checked="checked">
+            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-1"  checked="checked" accesskey="k" tabindex="0">
             <label for="radio-cust-1" class="radio-custom-label">Día completo - 120€</label>
           </div>
           <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-2">
+            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-2" accesskey="l" tabindex="1">
             <label for="radio-cust-2" class="radio-custom-label">Carrera Drift - 75€</label>
           </div>
           <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-3">
+            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-3" accesskey="m" tabindex="2">
             <label for="radio-cust-3" class="radio-custom-label">Evento Milla completa - 50€</label>
           </div>
           <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-4">
+            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-4" accesskey="n" tabindex="3">
             <label for="radio-cust-4" class="radio-custom-label">Festival CarAudio - 30€</label>
           </div>
         </div>
-        <input type="number" id="valor" name="valor" min="1" max="5" placeholder="Ingresa el número de entradas" value="1" step="1" class="nen">
-        <input type="button" name="previous" class="previous action-button" value="⌫" />
-        <input type="button" name="next" class="next action-button" value="➜" />
+        <input type="number" id="valor" name="valor" min="1" max="5" placeholder="Ingresa el número de entradas" value="1" step="1" class="nen" accesskey="o" tabindex="4">
+        <input type="button" name="previous" class="previous action-button" value="⌫" accesskey="p" tabindex="5"/>
+        <input type="button" name="next" class="next action-button" value="➜" accesskey="q" tabindex="6"/>
       </fieldset>
       <fieldset>
         <h2 class="fs-title">DATOS BANCARIOS</h2>
         <h3 class="fs-subtitle">Finaliza la compra de tus entradas</h3>
           <input type="text" name="fname" placeholder="Nombre del titular" />
-          <input type="number" id="ntar" name="ntar" maxlength="16" placeholder="Número de tarjeta">
-          <input type="number" id="ccv" name="ccv" maxlength="3" placeholder="ccv" class="nen">
-          <input type="button" name="previous" class="previous action-button" value="⌫" />
-        <input type="button" name="pago" class="action-button trigger" value="PAGO" href="js.js"/>
+          <input type="number" id="ntar" name="ntar" maxlength="16" placeholder="Número de tarjeta" accesskey="r" tabindex="7">
+          <input type="number" id="ccv" name="ccv" maxlength="3" placeholder="ccv" class="nen" accesskey="s" tabindex="8">
+          <input type="button" name="previous" class="previous action-button" value="⌫" accesskey="t" tabindex="9"/>
+        <input type="button" name="pago" class="action-button trigger" value="PAGO" href="js.js" accesskey="u" tabindex="10"/>
       </fieldset>
     </form>
 
@@ -82,7 +104,7 @@
     <div class="modal-wrapper">
       <div class="modal">
         <div class="head-modal">
-          <a class="trigger" href="js.js">✘</a>
+          <a class="trigger" href="js.js" accesskey="v">✘</a>
         </div>
         <div class="content-modal">
           <h1>¡Compra realizada con éxito!</h1>
@@ -119,8 +141,8 @@
             <div class="footer-col">
               <h4>Información</h4>
               <ul>
-                <li><a href="index.html/#infoEventos">Eventos</a></li>
-                <li><a href="index.html/#faq">FAQ</a></li>
+                <li><a href="index.html/#infoEventos" accesskey="y">Eventos</a></li>
+                <li><a href="index.html/#faq" accesskey="z">FAQ</a></li>
               </ul>
             </div>
             <div class="footer-col">
@@ -129,13 +151,13 @@
                 <li>
                   <div class="button" id="button-5">
                     <div id="t"></div>
-                    <a href="index.html/#contact">Contacto</a>
+                    <a href="index.html/#contact" accesskey="x">Contacto</a>
                   </div>
                 </li>
                 <li>
                   <div class="button" id="button-5">
                     <div id="t"></div>
-                    <a href="#msform">Entradas</a>
+                    <a href="#msform" accesskey="w">Entradas</a>
                   </div>
                 </li>
               </ul>
