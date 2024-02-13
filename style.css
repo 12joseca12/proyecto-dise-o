@@ -1211,9 +1211,7 @@ fieldset{
 .caja-imagen{
   width: 30%;
   height: 100%;
-  background-image: url('/img/formulario-contacto2.jpg');
-  background-size: cover;
-  background-position: center;
+  
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
