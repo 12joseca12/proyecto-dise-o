@@ -1166,8 +1166,8 @@ fieldset{
 }
 
 .btn-form {
-  width: 25%;
-  height: 10%;
+  width: 35%;
+  height: 12%;
   border-radius: 20px;
   background-image: linear-gradient(135deg, orange 0%, #f80000 100%);
   box-shadow: 0 20px 30px -6px #f80000;
@@ -1209,12 +1209,16 @@ fieldset{
 
 
 .caja-imagen{
-  width: 30%;
+  width: 40%;
   height: 100%;
-  
+  background-image: url(img/formulario-contacto2.jpg);
+  background-size: cover;
+  background-position: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+
 
 .boton-subir {
   color: #f80000;
