@@ -1077,110 +1077,7 @@ summary:after {
   width: 25px;
 }
 
-
-/*  Formulario de contacto  */
-
-.container-formulario{
-  width: 80%;
-  display: flex;
-  margin-left: 10%;
-  height: 450px;
-  margin-bottom: 20vh;
-  margin-top: 5vh;
-  border-radius: 20px;
-  box-shadow: 0px 0px 16px #bd0303;
-}
-
-.container-formulario h4{
-  text-align: center;
-  margin-bottom: 2%;
-}
-
-.formulario-contacto{
-  width: 70%;
-  height: 100%;
-  background-color: #ffffff;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.formulario-contacto label{
-  font-family: 'Goldman', sans-serif;
-  color: #710000;
-  font-size: 2em;
-  margin-right: 4%;
-  margin-left: 8%;
-}
-
-.formulario-contacto h4{
-  display: block;
-  font-family: 'Goldman', sans-serif;
-  color: #710000;
-  border-bottom: 5%;
-  font-size: 4em;
-}
-
-.input-form {
-  width: 70%;
-  padding: 1%;
-  font-size: 1.8em;
-  font-family: inherit;
-  box-shadow: 0 0 0 1px #f8bfbf;
-  border: none;
-  border-radius: 15px;
-  background-color: #fff5f5;
-  transition: all .3s;
-  margin-bottom: 2%;
-}
-
-.formulario-contacto form textarea{
-  margin-left: 22.5%;
-}
-
-.input-form::placeholder {
-  font-size: 0.75em;
-}
-
-.input-form:focus {
-  outline: none;
-  box-shadow: 0 0 10px 1px #ee8c8c;
-  border: none;
-  transition: all .3s;
-}
-
-fieldset{
-  border: none;
-  border-top: 5%;
-}
-
-.formulario-contacto .input-form:nth-child(2){
-  margin-left: 2%;
-}
-
-.formulario-contacto .input-form:nth-child(5){
-  margin-left: 2.7%;
-}
-
-.formulario-contacto .input-form:nth-child(8){
-  margin-left: 0.5%;
-}
-
-.btn-form {
-  width: 35%;
-  height: 12%;
-  border-radius: 20px;
-  background-image: linear-gradient(135deg, orange 0%, #f80000 100%);
-  box-shadow: 0 20px 30px -6px #f80000;
-  outline: none;
-  cursor: pointer;
-  border: none;
-  font-size: 3em;
-  color: white;
-  transition: all 0.3s ease-in-out;
-  font-family: "Goldman", sans-serif;
-  margin-left: 40%;
-}
-
+/*Boton jumbotron*/
 .btn-form2 {
   width: 50%;
   height: 10%;
@@ -1198,28 +1095,17 @@ fieldset{
   margin-top: 4%;
 }
 
-.btn-form:hover {
-  transform: translateY(3px);
-  box-shadow: none;
-}
+/* Formulario de contacto*/
 
-.btn-form:active {
-  opacity: 0.5;
-}
-
-
-.caja-imagen{
-  width: 40%;
-  height: 100%;
-  background-image: url(img/formulario-contacto2.jpg);
-  background-size: cover;
-  background-position: center;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
+ 
 
 
 
+
+
+
+
+/*Boton  subir*/
 .boton-subir {
   color: #f80000;
   background-color: #ffffff;
