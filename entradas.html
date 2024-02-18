@@ -6,8 +6,7 @@
     <title>Entradas</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 <body>
 
@@ -45,25 +44,6 @@
     </header>
      <div class="videocontainer"> <video src="img/video.mp4" autoplay controls ></video></div>
    
-
-    
-    
-      
-      
-
-
-    <div class="modal-wrapper">
-      <div class="modal">
-        <div class="head-modal">
-          <a class="trigger" href="js.js" accesskey="v">✘</a>
-        </div>
-        <div class="content-modal">
-          <h1>¡Compra realizada con éxito!</h1>
-          <h2>Revise su correo para obtener sus entradas</h2>
-          <img src="img/gtr34.png" alt="gtr34">
-        </div>
-      </div>
-    </div>
 
 
     <div class="cards">
@@ -129,46 +109,50 @@
 
     <div class="login-box" id="formulario">
       <p>ADQUIERA YA SUS ENTRADAS, NO SE LO PIERDA</p>
-      <form><fieldset>
-        <div class="user-box">
-          <input required="" name="" type="text" accesskey="f" tabindex="1">
-          <label>Email</label>
-        </div>
-        <div class="user-box">
-          <input required  type="text" accesskey="g" tabindex="2">
-          <label>Nombre</label>
-        </div>
-        <div class="user-box">
-          <input required  type="text" accesskey="h" tabindex="3">
-          <label>Matrícula</label>
-        </div>
-        <div class="user-box">
-          <input required  type="number" accesskey="i" tabindex="4">
-          <label>Nº ASISTENTES</label>
-        </div>
-      </fieldset>
-      <fieldset>
-        <div class="radio-input">
-          <input value="value-1" name="value-radio" id="value-1" type="radio" accesskey="j" tabindex="5">
-          <label for="value-1">DRFT</label>
-          <input value="value-2" name="value-radio" id="value-2" type="radio" accesskey="k" tabindex="6">
-          <label for="value-2">MILLA</label>
-          <input value="value-3" name="value-radio" id="value-3" type="radio" accesskey="l" tabindex="7">
-          <label for="value-3">CARAUDIO</label>
-          <input value="value-4" name="value-radio" id="value-4" type="radio" accesskey="m" tabindex="8">
-          <label for="value-4">PASE COMPLETO</label>
-        </div>
-      </fieldset>
-        <a href="#" class="trigger" accesskey="n" tabindex="9">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          COMPRAR
-        </a>
+      <form>
+        <fieldset>
+          <div class="user-box">
+            <input required name="email" id="email" type="email" accesskey="f" tabindex="1" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <label for="email">Email</label>
+          </div>
+          <div class="user-box">
+            <input required  type="text" accesskey="g" tabindex="2" id="nombre" pattern="^[a-zA-Z\s]+$">
+            <label for="nombre">Nombre</label>
+          </div>
+          <div class="user-box">
+            <input type="text" accesskey="h" tabindex="3" id="matricula" pattern="\d{4}[a-zA-Z]{3}">
+            <label for="matricula">Matrícula</label>
+          </div>
+          <div class="user-box">
+            <input required  type="number" accesskey="i" tabindex="4" id="asistentes" min="0" max="4">
+            <label for="asistentes">ACOMPAÑANTES</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="radio-input">
+            <input value="value-1" name="value-radio" id="value-1" type="radio" accesskey="j" tabindex="5">
+            <label for="value-1">DRFT</label>
+            <input value="value-2" name="value-radio" id="value-2" type="radio" accesskey="k" tabindex="6">
+            <label for="value-2">MILLA</label>
+            <input value="value-3" name="value-radio" id="value-3" type="radio" accesskey="l" tabindex="7">
+            <label for="value-3">CARAUDIO</label>
+            <input value="value-4" name="value-radio" id="value-4" type="radio" accesskey="m" tabindex="8">
+            <label for="value-4">PASE COMPLETO</label>
+          </div>
+        </fieldset>
+        <button class="cssbuttons-io-button trigger" type="submit">
+          ENVIAR
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </button>
+        
       </form>
-
     </div>
+    
 
 
 
@@ -234,10 +218,5 @@
           <p>&copy; 2023 José Carlos Sánchez García</p>
         </div>
       </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-    <script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
-    <script src="js.js"></script>
 </body>
 </html>

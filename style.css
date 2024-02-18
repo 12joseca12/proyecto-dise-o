@@ -1071,133 +1071,77 @@ summary:after {
   transition: .5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.login-box .user-box input:focus ~ label, .login-box .user-box input:valid ~ label {
+  top: -50%;
+  left: 0;
+  color: #710000;
+  font-size: 1.5em;
+}
+.login-box .user-box input:placeholder-shown ~ label {
   top: -20px;
   left: 0;
   color: #710000;
   font-size: 1.5em;
 }
 
-.login-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  font-weight: bold;
-  color: #fff;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
+.cssbuttons-io-button {
   background: #710000;
+  color: white;
   font-family: 'Audiowide', sans-serif;
-  border-radius: 5px;
-  transition: .5s;
-  margin-top: 40px;
+  padding: 0.35em;
+  padding-left: 1.2em;
   margin-left: 20%;
-  letter-spacing: 3px
+  margin-top: 5%;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #710000;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
 }
 
-.login-box a:hover {
-  background: #710000;
-  color: orange;
-  border-radius: 5px;
-}
-
-.login-box a span {
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
   position: absolute;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #710000;
+  right: 0.3em;
+  transition: all 0.3s;
 }
 
-.login-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #fff);
-  animation: btn-anim1 1.5s linear infinite;
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
 }
 
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-
-  50%,100% {
-    left: 100%;
-  }
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  height: 22px;
+  width: 20px;
+  transition: transform 0.3s;
+  color: #710000;
 }
 
-.login-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #fff);
-  animation: btn-anim2 1.5s linear infinite;
-  animation-delay: .375s
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
 }
 
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-
-  50%,100% {
-    top: 100%;
-  }
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
 
-.login-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #fff);
-  animation: btn-anim3 1.5s linear infinite;
-  animation-delay: .75s
-}
-
-@keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-
-  50%,100% {
-    right: 100%;
-  }
-}
-
-.login-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #fff);
-  animation: btn-anim4 1.5s linear infinite;
-  animation-delay: 1.125s
-}
-
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-
-  50%,100% {
-    bottom: 100%;
-  }
-}
-
-.login-box a.a2 {
-  color: #fff;
-  text-decoration: none;
-}
-
-.login-box a.a2:hover {
-  background: transparent;
-  color: #aaa;
-  border-radius: 5px;
-}
 
 .radio-input {
   display: flex;
@@ -1392,92 +1336,13 @@ fieldset {
   border: 1px solid #710000;
   background-color: #710000;
  }
- 
 
- .modal-wrapper{
-  width:100%;
-  z-index: 999;
-  height:100%;
-  position:fixed;
-  top:0; left:0;
-  background: rgba(0, 0, 0, 0.652);
-  visibility:hidden;
-  opacity:0;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
 
-.modal-wrapper.open{
-  opacity:1;
-  visibility:visible;
-}
-
-.modal{
-  width:60%;
-  height:60%;
-  display:block;
-  margin-left: -30%;
-  position:relative;
-  top:50%; left:50%;
-  background:#ffffff;
-  opacity:0;
-  transition: all 0.5s ease-in-out;
-  z-index: 9999;
-}
-
-.modal-wrapper.open .modal{
-  margin-top:-12%;
-  opacity:1;
-  border-radius: 20px;
-  background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(248,0,0,0.9) 100%);
-}
-
-.head-modal{
-  width:100%;
-  height:20%;
-  padding:1.5em 5%;
-  overflow:hidden;
-  background:#f80000;
-}
-
-.head-modal a{
-  text-decoration: none;
-  color: #ffffff;
-  text-align: right;
-  font-size: 5em;
-  margin-left: 90%;
-  margin-top: -10%;
-}
-
-.content-modal{
-  padding:5%;
-}
-
-.content-modal h1{
-text-align: center;
-font-family: 'Audiowide', sans-serif;
-font-size: 4em;
-color: #710000;
-margin-top: -3%;
-}
-
-.content-modal h2{
-  text-align: center;
-  font-family: 'Goldman', sans-serif;
+.copyright{
+  font-family: 'Audiowide', sans-serif;
   font-size: 2em;
-  color: #5b5b5b;
-  margin-top: -3%;
-  }
-
-.content-modal img{
-  margin-top: -7.5%;
-  margin-left: 25%;
-  position: relative;
- width: 50%;
 }
+
 .btn-primary{
   background: rgb(231,175,53);
   background: linear-gradient(145deg, #e7af35 10%, rgba(203,33,8,1) 67%);
