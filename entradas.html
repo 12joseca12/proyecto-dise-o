@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +20,7 @@
               <a href="entradas.html" accesskey="b"
                 ><i
                   class="fa fa-shopping-cart"
-                  aria-hidden="comprar entradas"
+            
                 ></i>
                 Entradas</a
               >
@@ -28,79 +29,27 @@
               <a href="#faq" accesskey="c"
                 ><i
                   class="fa fa-question"
-                  aria-hidden="preguntas frecuentes"
+                 
                 ></i>
                 FAQ</a
               >
             </li>
             <li class="nav-item">
-              <a href="#contact" accesskey="d"
-                ><i class="fa fa-phone" aria-hidden="contáctanos"></i>
-                Contacto</a
-              >
+              <a href="#formulario" accesskey="d">Saltar a contenido</a>
             </li>
           </ul>
-          <a href="#opciones" class="salto" accesskey="e">Saltar a contenido</a>
+         
         </div>
       </nav>
      
     </header>
-
-    <video src="img/video.mp4" autoplay controls aria-controls="reproducir video" ></video>
+     <div class="videocontainer"> <video src="img/video.mp4" autoplay controls ></video></div>
+   
 
     
-    <form id="msform">
+    
       
-      <ul id="progressbar">
-        <li class="active">Datos personales</li>
-        <li>Tipo de entradas</li>
-        <li>Datos bancarios</li>
-      </ul>
       
-      <fieldset>
-        <h2 class="fs-title">DATOS PERSONALES</h2>
-        <h3 class="fs-subtitle">Confirmación de acceso al recinto</h3>
-        <input type="text" name="fname" placeholder="Nombre" accesskey="f"/>
-        <input type="text" name="lname" placeholder="Apellidos" accesskey="g"/>
-        <input type="text" name="phone" placeholder="Teléfono" accesskey="h"/>
-        <input type="text" name="email" placeholder="Email" accesskey="i"/>
-        <input type="button" name="next" class="next action-button" value="➜" accesskey="j"/>
-      </fieldset>
-      <fieldset class="radio">
-        <h2 class="fs-title">TIPO DE ENTRADAS</h2>
-        <h3 class="fs-subtitle">Elija entre un único evento o disfrute de un día de acción automovilística</h3>
-        <div class="custom-radio">
-          <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-1"  checked="checked" accesskey="k" tabindex="0">
-            <label for="radio-cust-1" class="radio-custom-label">Día completo - 120€</label>
-          </div>
-          <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-2" accesskey="l" tabindex="1">
-            <label for="radio-cust-2" class="radio-custom-label">Carrera Drift - 75€</label>
-          </div>
-          <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-3" accesskey="m" tabindex="2">
-            <label for="radio-cust-3" class="radio-custom-label">Evento Milla completa - 50€</label>
-          </div>
-          <div>
-            <input type="radio" name="radio-cust" class="radio-custom" id="radio-cust-4" accesskey="n" tabindex="3">
-            <label for="radio-cust-4" class="radio-custom-label">Festival CarAudio - 30€</label>
-          </div>
-        </div>
-        <input type="number" id="valor" name="valor" min="1" max="5" placeholder="Ingresa el número de entradas" value="1" step="1" class="nen" accesskey="o" tabindex="4">
-        <input type="button" name="previous" class="previous action-button" value="⌫" accesskey="p" tabindex="5"/>
-        <input type="button" name="next" class="next action-button" value="➜" accesskey="q" tabindex="6"/>
-      </fieldset>
-      <fieldset>
-        <h2 class="fs-title">DATOS BANCARIOS</h2>
-        <h3 class="fs-subtitle">Finaliza la compra de tus entradas</h3>
-          <input type="text" name="fname" placeholder="Nombre del titular" />
-          <input type="number" id="ntar" name="ntar" maxlength="16" placeholder="Número de tarjeta" accesskey="r" tabindex="7">
-          <input type="number" id="ccv" name="ccv" maxlength="3" placeholder="ccv" class="nen" accesskey="s" tabindex="8">
-          <input type="button" name="previous" class="previous action-button" value="⌫" accesskey="t" tabindex="9"/>
-        <input type="button" name="pago" class="action-button trigger" value="PAGO" href="js.js" accesskey="u" tabindex="10"/>
-      </fieldset>
-    </form>
 
 
     <div class="modal-wrapper">
@@ -114,6 +63,111 @@
           <img src="img/gtr34.png" alt="gtr34">
         </div>
       </div>
+    </div>
+
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-img priImagen"></div>
+        <div class="card-info">
+          <p class="text-title">Medidor Presión</p>
+       
+        </div>
+        <div class="card-footer">
+          <span class="text-title">Recogelo en la entrada</span>
+        <div class="card-button">
+          <svg class="svg-icon" viewBox="0 0 20 20">
+            <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+            <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+            <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img secImagen">
+        
+      </div>
+      <div class="card-info">
+        <p class="text-title">Manguera Presión</p>
+      </div>
+      <div class="card-footer">
+      <span class="text-title">Recogelo en la entrada</span>
+      <div class="card-button">
+        <svg class="svg-icon" viewBox="0 0 20 20">
+          <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+          <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+          <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img tercImagen"></div>
+    <div class="card-info">
+      <p class="text-title">Pomo</p>
+      
+    </div>
+    <div class="card-footer">
+      <span class="text-title">Recogelo en la entrada</span>
+    <div class="card-button">
+      <svg class="svg-icon" viewBox="0 0 20 20">
+        <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+        <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+        <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+
+
+    <div class="login-box" id="formulario">
+      <p>ADQUIERA YA SUS ENTRADAS, NO SE LO PIERDA</p>
+      <form><fieldset>
+        <div class="user-box">
+          <input required="" name="" type="text" accesskey="f" tabindex="1">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input required  type="text" accesskey="g" tabindex="2">
+          <label>Nombre</label>
+        </div>
+        <div class="user-box">
+          <input required  type="text" accesskey="h" tabindex="3">
+          <label>Matrícula</label>
+        </div>
+        <div class="user-box">
+          <input required  type="number" accesskey="i" tabindex="4">
+          <label>Nº ASISTENTES</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="radio-input">
+          <input value="value-1" name="value-radio" id="value-1" type="radio" accesskey="j" tabindex="5">
+          <label for="value-1">DRFT</label>
+          <input value="value-2" name="value-radio" id="value-2" type="radio" accesskey="k" tabindex="6">
+          <label for="value-2">MILLA</label>
+          <input value="value-3" name="value-radio" id="value-3" type="radio" accesskey="l" tabindex="7">
+          <label for="value-3">CARAUDIO</label>
+          <input value="value-4" name="value-radio" id="value-4" type="radio" accesskey="m" tabindex="8">
+          <label for="value-4">PASE COMPLETO</label>
+        </div>
+      </fieldset>
+        <a href="#" class="trigger" accesskey="n" tabindex="9">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          COMPRAR
+        </a>
+      </form>
+
     </div>
 
 
@@ -153,7 +207,7 @@
                 <li>
                   <div class="button" id="button-5">
                     <div id="t"></div>
-                    <a href="index.html/#contact" accesskey="x">Contacto</a>
+                    <a href="index.html" accesskey="x">Contacto</a>
                   </div>
                 </li>
                 <li>
